@@ -5,9 +5,8 @@ import re
 class User(BaseModel):
     name: str
     id: int
-    name: (str)
-    age: (int)
-    is_adult: (bool)
+    age: int
+    is_adult: bool
 
 class Feedback(BaseModel):
     name: str = Field(..., min_length=2, max_length=50)
